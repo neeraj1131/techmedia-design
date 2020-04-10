@@ -1,0 +1,21 @@
+{
+  "name": "front-end-development-exercise",
+  "version": "1.0.0",
+  "description": "front-end assignment",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.min.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "Neeraj Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

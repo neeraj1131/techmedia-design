@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans&display=swap');
+hr {
+    max-width: 100%;
+}
+.heading-primary {
+    color: $color-white;
+    text-align: center;
+    &--main {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 400;
+        widows: 100%;
+        @include respond(tab-port){
+            font-size: 1.5rem;
+            width: 28rem;
+        }
+        @include respond(tab-land){
+            // font-size: 56.25% !important;
+        }
+    }
+    &--sub {
+        color: $color-secondary-white;
+        display: block;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        font-weight: 400;
+        @include respond(tab-port){
+            font-size: 1rem;
+        }
+    }
+}
+.heading-secondary {
+    color: $color-black;
+    font-size: 4rem;
+    font-weight: 400;
+    width: 80rem;
+    @include respond(tab-port){
+        font-size: 3rem;
+        width: 60rem;
+    }
+    @include respond(tab-land){
+        font-size: 3rem;
+        width: 60rem;
+    }
+    @include respond(phone){
+        font-size: 2rem;
+        width: 30rem;
+    }
+}
+.heading-small {
+    font-family: 'Work Sans', sans-serif ;
+    font-size: 1.4rem;
+    color: $color-secondary;
+    @include respond(tab-land){
+        font-size: 1.4rem;
+    }
+    @include respond(tab-port){
+        font-size: 1.4rem;
+    }
+    @include respond(phone){
+        font-size: 1rem;
+    }
+}
+.heading-medium {
+    font-family: 'Work Sans', sans-serif ;
+    font-size: 1.6rem;
+    color: $color-secondary;
+    @include respond(tab-port){
+        font-size: 1.4rem;
+    }
+}
+.heading-medium-black {
+    font-family: 'Work Sans', sans-serif ;
+    font-size: 1.6rem;
+    color: $color-black;
+    @include respond(phone){
+        font-size: 1.4rem;
+    }
+}
+.heading-verysmall {
+    font-size: 1rem;
+    @include respond(phone){
+        font-size: 0.8rem;
+    }
+}
+.bold-text {
+    font-weight: 600;
+    color: $color-black;
+}
+.red-text {
+    font-weight: 600;
+    color: $color-primary;
+}
+.red-big-text {
+    font-weight: 600;
+    color: $color-primary;
+    font-size: 2rem;
+    padding: 2rem 10rem 2rem 10rem;
+    margin: 4rem 2rem 4rem 1rem;
+    @include respond(laptop){
+        padding: 2rem 5rem 2rem 5rem;
+    }
+    @include respond(tab-port){
+        padding: 2rem 8rem 2rem 8rem;
+        margin: 2rem 2rem 2rem 1rem;
+    }
+    @include respond(tab-land){
+        padding: 2rem 8rem 2rem 8rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    @include respond(phone){
+        font-size: 1.6rem;
+        padding: 2rem 2rem 2rem 2rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+}
+.website-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.text {
+    &--animate {
+        animation: moveInLeft 1.5s ease-out .75s;
+    }
+}

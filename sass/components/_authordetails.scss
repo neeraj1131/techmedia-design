@@ -1,0 +1,106 @@
+.author {
+    font-family: 'Work Sans', sans-serif ;
+    padding: 2rem;
+    &--mobile-view {
+        display: none;
+        @include respond(phone){
+            display: block;
+            margin-bottom:2rem;
+        }
+    }
+    &--normal-view {
+        margin-top: 2rem;
+    }
+    &__image {
+        width: 8rem;
+        height: 8rem;
+        @include respond(phone){
+            width: 6rem;
+            height: 6rem;
+            float: left;
+            position: relative;
+            top: -1rem;
+        }
+    }
+    &--history {
+        @include respond(phone){
+            display: none;
+        }
+    }
+    &__mobilearrow {
+        display: none;
+        @include respond(phone){
+            display: block;
+            width:2rem;
+            float: right;
+            position: relative;
+            top: -2rem;
+            left: -2rem;
+            cursor: pointer;
+            &:hover {
+                fill: black;
+            }
+        }
+    }
+    &__detail {
+        font-size: 1.2rem;
+        font-weight: 600;
+        &--name {
+            display: block;
+            margin-top: 2rem;
+            @include respond(phone){
+                display: block;
+                margin-left: 7rem;
+                margin-top:0;
+            }
+        }
+        &--heading {
+            margin-top: 2rem;
+        }
+        &--border {
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+            border-bottom: 4px solid $color-black;
+        }
+    }
+    &__info {
+        font-size: 1.2rem;
+        color: $color-secondary;
+        font-weight: 400;
+        display: block;
+        &--sub {
+            display: block;
+            @include respond(phone){
+                display: inline;
+            }
+        }
+        @include respond(phone){
+            text-align: center;
+            display: inline;
+            font-size: 0.8rem;
+            margin-left: 1rem;
+
+        }
+    }
+    &__subdetail {
+        font-family: 'Work Sans', sans-serif ;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    &__detailedinfo {
+        font-size: 1.2rem;
+        font-family: 'Work Sans', sans-serif ;
+        font-weight: 400;
+        color: $color-secondary;
+        @include respond(phone){
+            font-size: 0.8rem;
+        }
+    }
+    &__detailedinfonpad {
+       margin-bottom: 0;
+    }
+}
+.active {
+    display: block;
+}

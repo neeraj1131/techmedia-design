@@ -1,0 +1,39 @@
+.section-info {
+    background-color: $color-white;
+    padding: 5rem 0;
+    margin: -2rem 10rem 0 10rem;
+    @include respond(tab-land){
+        padding: 2rem 0;
+        margin: -2rem 2rem 0 2rem;
+    }
+    @include respond(tab-port){
+        padding: 2rem 0;
+        margin: -2rem 2rem 0 2rem;
+    }
+    @include respond(phone){
+        padding: 2rem 0;
+        margin: -2rem 0 0 0;
+    }
+}
+.section-about {
+    position: relative;
+    &__background {
+        background-color: $color-secondary-white;
+    }
+}
+.section-recommended {
+    height: 36rem;
+    background-color: $color-white;
+    padding: 5rem 0;
+    margin: 0rem 20rem 0 20rem;
+    @include respond(tab-land){
+        padding: 2rem 0;
+        margin: 0rem 2rem 0 2rem;
+    }
+    @include respond(phone){
+        height: 70rem;
+        padding: 2rem 0;
+        margin: 0rem 2rem 0 2rem;
+     
+    }
+}

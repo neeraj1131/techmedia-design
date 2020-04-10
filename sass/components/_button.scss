@@ -1,0 +1,67 @@
+.button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    background-color: $color-primary;
+    border: 3px solid $color-primary;
+    border-radius: 10px;
+    color: $color-white;
+
+    position: relative;
+    &__text {
+        float: left;
+        text-transform: uppercase;
+        z-index: 100;
+        position: relative;
+    }
+    &:hover, &:visited{
+        color: $color-primary;
+        z-index: 100;
+    }
+    &__arrow {
+        position: absolute;
+        width: 16px;
+        height: 6px;
+        right: 1rem;
+        top: 2rem;
+        background-image: url("../../Assets/06_Button/Arrow.svg");
+        background-size: cover;
+        @include respond(tab-land){
+            right: 2rem;
+        }
+        @include respond(phone){
+            right: 2rem;
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: .5rem;;
+    }
+    &:link, &:visited {
+        color: $color-primary;
+        
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top:2px;
+        border-radius: 10px;
+        left:2px;
+        height:90%;
+        width: 0px;
+        background-color: $color-white;
+        transition: width .6s cubic-bezier(1,0,0,1);
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: none!important;
+    }   
+    &:hover &__arrow {
+        background-image: url("../../Assets/06_Button/Arrow_on\ hover.svg");
+    }
+    &:hover::before {
+        width: 98%;
+    }
+}

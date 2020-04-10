@@ -1,0 +1,117 @@
+.box {
+    padding: 2rem;
+    margin-top: 2rem;
+    @include respond(phone){
+        padding: 1rem;
+    }
+}
+.box-2 {
+    margin-right:0rem;
+    padding: 2rem;
+    @include respond(phone){
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+.box-3 {
+    padding: 2rem;
+    float: right;
+    @include respond(tab-port){
+        float: unset;
+    }
+    @include respond(phone){
+        display: none;
+    }
+}
+.about-text {
+    padding: 5rem 0;
+    margin: 4rem 25rem 0 10rem;
+    @include respond(laptop){
+        margin: 4rem 15rem 0 10rem;
+    }
+    @include respond(tab-port){
+        padding: 5rem 0;
+        margin: 4rem 15rem 0 10rem;
+    }
+    @include respond(tab-land){
+        padding: 5rem 0;
+        margin: 2rem;
+    }
+    @include respond(phone){
+        padding: 2rem;
+        margin: 0;
+    }
+}
+.feature {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif ;
+    margin-bottom: 3rem;;
+    &__city {
+        display: inline;
+        margin: 1rem 1rem 1rem 0;
+        border: 2px solid $color-primary;
+        padding: 5px;
+        color: $color-primary;
+    }
+    &__founder {
+        display: inline; 
+        margin: 1rem 0;
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 7px;
+    }
+}
+.media {
+    display: block;
+    color: $color-primary;
+    float: right;
+    margin: 2rem;
+    @include respond(tab-port) {
+        float: left;
+        margin: 1rem;
+    }
+    &__links {
+        list-style-type: none;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @include respond(phone){
+            margin-top: 0;
+            margin-bottom: 0;
+            display: inline;
+        }
+    }
+    &__text {
+        font-size: 1.6rem;
+        display: inline-block;
+        @include respond(phone){
+            display: none;
+        }
+        @include respond(tab-land){
+            font-size: 1.4rem;
+        }
+    }
+
+}
+.question-mark {
+    position: absolute;
+    height: 50rem;
+    @include respond(tab-port){
+        height: 40rem;
+    }
+    @include respond(tab-land){
+        height: 30rem;
+    }
+    @include respond(phone){
+        height: 15rem;
+    }
+}
+.mobile-view--button {
+    display: none;
+       @include respond(phone){
+        display: block;
+        margin-top: 2rem;
+        padding: 0rem;
+    } 
+}

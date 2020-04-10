@@ -1,0 +1,13 @@
+.header {
+    height: 30vh;
+    background-image: linear-gradient(to right, rgba($color-black,0.7), rgba($color-black,0.7)), url('../Assets/02_header-banner.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
